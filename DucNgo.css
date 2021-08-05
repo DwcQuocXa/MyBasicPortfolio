@@ -1,0 +1,443 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+/**SECTION 1**/
+
+.home {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)), url(images/3smbHbQ.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3.2%;
+}
+/** HEADER **/
+
+.header {
+    text-align: center;
+    justify-content: space-between;
+    padding: 0em 12em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+
+    
+}
+
+.header h2 {
+    font-size: 195%;
+}
+
+
+.menu li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1.2em 1em;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+    transition: all ease 200ms;
+}
+
+.menu li a:hover {
+    color:  rgb(66, 66, 66);
+}
+
+/** MAIN **/
+
+.main {
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    padding: 2.5em;
+    margin-left: 35%;
+    margin-right: 35%;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif; 
+}
+
+.main-img {
+    border-radius: 50%;
+}
+
+.main h3 {
+    font-weight: 600;
+}
+.main h3 a {
+    text-decoration: none;
+    color: white;
+    transition: all ease 200ms;
+}
+
+.main h3 a:hover {
+    color:rgb(66, 66, 66)
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.main li {
+    display: inline-block;
+    justify-content: space-between;
+    margin: 1.1em;
+    list-style: none;
+}
+.main li a {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    transition: all ease 200ms;
+}
+
+.main li a:hover {
+    color: rgb(66, 66, 66);
+}
+
+/** RESPONSIVE**/
+
+@media (max-width:1000px) {
+
+    .header {
+        margin-bottom: 2.1em;
+        display: inline;
+    }
+    .logo {
+        flex-direction: column;
+        margin-top: 0.2em;
+        font-size: 1.3em;
+    }
+    .menu li {
+        display: inline;
+        padding: 0em 0.2em;
+    }
+
+    .menu li a {
+        font-size: 0.9em;
+    }
+
+    .main {
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+    .main li {
+        margin-bottom: 0.23em;
+    }
+}
+
+
+/** ABOUT ME **/
+.about-me {
+    display: flex;
+
+}
+.about-me div{
+    padding: 6em 12em;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: row;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-me li {
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-left {
+    text-decoration: none;
+    padding-right: 8em;
+}
+
+.about-right {
+    background-image: url(images/KEY_1884.jpg);
+    height: 26em;
+    width: 24em;
+    float: right;
+} 
+.about-button {
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    background: rgb(235, 75, 107);
+    border-radius: 1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    transition: all ease 200ms;
+}
+
+.about-button:hover {
+    background: rgb(139, 28, 50);
+}
+
+@media (max-width:1000px) {
+    .about-me {
+        padding-right: 5em;
+    }
+    .about-me div {
+        display: center;
+        padding: 6em 3em;
+
+    }
+    .about-right {
+        height: 20em;
+        width: 18em;
+    }
+    .about-left {
+        padding-right: 1em;
+    }
+}
+
+/** MY STUDIES **/
+
+.studies {
+    display: flex;
+}
+.studies div{
+    padding: 6em 12em;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: row;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.studies li {
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.studies-right {
+    text-decoration: none;
+    padding-left: 8em;
+}
+
+.studies-left {
+    background-image: url(images/Studies.jpg);
+    height: 26em;
+    width: 24em;
+    float: left;
+}
+
+.studies-button {
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    background: rgb(235, 75, 107);
+    border-radius: 1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    transition: all ease 200ms;
+}
+
+.studies-button:hover {
+    background: rgb(139, 28, 50);
+}
+
+@media (max-width:1000px) {
+    .studies div {
+        padding: 3em 3em;
+    }
+    .studies-right {
+        padding-left: 0.5em;
+    }
+    .studies-left {
+        height: 20em;
+        width: 18em;
+    }
+}
+
+/** MY HOBBIES **/
+
+.hobbies {
+    display: flex;
+}
+.hobbies div{
+    padding: 6em 12em;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: row;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hobbies li {
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hobbies-left {
+    text-decoration: none;
+    padding-right: 8em;
+}
+
+.hobbies-right {
+    background-image: url(images/basketball.jpg);
+    height: 26em;
+    width: 24em;
+    float: right;
+}
+
+.hobbies-button {
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    background: rgb(235, 75, 107);
+    border-radius: 1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    transition: all ease 200ms;
+}
+
+.hobbies-button:hover {
+    background: rgb(139, 28, 50);
+}
+
+@media (max-width:1000px) {
+    .hobbies div {
+        display: center;
+        padding: 6em 3em;
+        
+    }
+
+    .hobbies-left {
+        padding-right: 2em;
+    }
+
+    .hobbies-right {
+        height: 20em;
+        width: 18em;
+    }
+}
+
+/** YOUTUBE **/
+
+#youtube {
+    display: flex;
+}
+.youtube div{
+    padding: 6em 12em;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: row;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.youtube li {
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.youtube-right {
+    text-decoration: none;
+    padding-left: 8em;
+}
+
+.youtube-right p a {
+    text-decoration: none;
+    color: rgb(235, 75, 107);
+}
+
+.youtube-right p a:hover {
+    color: rgb(139, 28, 50);
+}
+.youtube-left {
+    
+    height: 26em;
+    width: 32em;
+    float: left;
+}
+
+.youtube-button {
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    background: rgb(235, 75, 107);
+    border-radius: 1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    transition: all ease 200ms;
+}
+
+.youtube-button:hover {
+    background: rgb(139, 28, 50);
+}
+
+@media (max-width:1000px) {
+    .youtube div {
+        padding: 3em 3em;
+    }
+    .youtube-left {
+        height: 20em;
+        width: 17em;
+        padding-top: 1.8em;
+    }
+    .youtube-right {
+        padding-left: 0.5em;
+    }
+}
+
+/** CONTACT **/
+
+.contact div {
+    padding: 0em 0em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: rgb(235, 75, 107);
+    color: white;
+}
+
+.contact div ul  {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.contact div ul li {
+    flex-basis: 33%;
+    height: 15em;
+}
+
+.contact-title {
+    height: 2em;
+    padding-top: 1.5em;
+    font-size: 3.5em;
+}
+
+.contact div ul li i {
+    font-size: 2.5em;
+    padding-bottom: 1em;
+}
+
+@media (max-width:1000px) {
+    .contact-title {
+        font-size: 3em;
+    }
+    .contact div ul li {
+        flex-basis: 100%;
+        height: 15em;
+    }
+}
